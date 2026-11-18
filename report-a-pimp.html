@@ -1,0 +1,107 @@
+<!doctype html>
+<!--
+  Report a Pimp — Privacy Policy page (deploy-ready static HTML; ships with the app build)
+  DRAFT v1 (2026-11-06): describes the production web build v1 as built —
+  fully local: reports are saved in the device's local storage only,
+  keyed by a report code + a salted hash of the reporter's PIN; no
+  accounts; no reporter identity is ever collected; no transmission.
+  Photos a reporter adds are stripped of EXIF/XMP metadata on the
+  device before being kept. BEFORE THIS PAGE IS LINKED FROM A STORE
+  LISTING:
+    1. The launch gates must have cleared — attorney privacy/defamation
+       review, security review, REAL hotline/CyberTipline routing
+       verification, trademark — and the final build re-read against
+       this page. The attorney review owns the custody, retention, and
+       lawful-process language; this draft states the v1 technical
+       truth only.
+    2. When live routing ships, this page must be rewritten BEFORE
+       that version ships: what leaves the device, where it routes,
+       the short audit-window retention, deletion, lawful process.
+    3. Confirm the support mailbox and update "Last updated".
+  This page loads no external resources (no fonts, no scripts, no trackers).
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Report a Pimp — Privacy Policy</title>
+<style>
+  :root { --ink:#06231a; --gold:#b8860b; --paper:#f7f3e8; --text:#122b1e; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--paper); color:var(--text);
+         font-family:system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+         line-height:1.65; font-size:1.05rem; }
+  main { max-width:44rem; margin:0 auto; padding:2.5rem 1.25rem 4rem; }
+  .brand { font-weight:900; letter-spacing:.04em; color:var(--ink); }
+  .brand b { color:var(--gold); }
+  h1 { font-size:2rem; font-weight:900; margin:.25rem 0 .25rem; }
+  h2 { font-size:1.2rem; font-weight:800; margin:1.75rem 0 .5rem;
+       border-bottom:3px solid var(--gold); padding-bottom:.25rem; }
+  .updated { color:#6d7a6a; font-size:.95rem; margin:0 0 1.5rem; }
+  ul { padding-left:1.25rem; }
+  li { margin:.4rem 0; }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand"><b>REPORT A PIMP</b> — GAME SOLD AND TOLD.</div>
+  <h1>Report a Pimp Privacy Policy</h1>
+  <p class="updated">Last updated: 2026-11-06 (draft)</p>
+
+  <p>Report a Pimp lets a person report a trafficker without giving a name. That promise only works if anonymity is technically true, so this policy states exactly what this version of the app stores, where, and what it never does. The short version: <strong>we never learn who you are, and in this version your report never leaves your device.</strong></p>
+
+  <h2>What this app stores, and where</h2>
+  <ul>
+    <li><strong>On your device only:</strong> the reports you save — the identifier details you chose to enter (nickname, description, vehicle, plate, phone, social handles, ad links, places, times, situation flags, and your own words), any follow-up notes you add, and your language setting. All of it sits in your browser's local storage on this device, under the app's own storage keys.</li>
+    <li><strong>Your report is keyed by a code and a PIN — never by you.</strong> When you save a report, the app generates a report code and stores only a salted cryptographic hash of the PIN you set. The PIN itself is never stored, in any form we could read back. Checking a report requires the code and the PIN together; if both are lost, the report cannot be recovered — by design, because there is no account and no identity to recover it with.</li>
+    <li><strong>Nothing is transmitted.</strong> This version has no accounts, no sign-in, no analytics, no advertising, no trackers, and no server that receives anything. Reports are <em>not</em> sent to the National Hotline, the CyberTipline, or any authority in this version — the app says so on its screens. Live routing turns on at launch, after the routing and safety reviews, and this policy will be rewritten before that version ships.</li>
+    <li><strong>Nothing you type is kept until you save.</strong> The report form lives in memory only. Typing, and the Quick Exit, leave nothing behind: the EXIT button wipes the form instantly and swaps to a neutral weather screen.</li>
+  </ul>
+
+  <h2>Photos you add</h2>
+  <ul>
+    <li>You may attach photos that are already on your phone. Before a photo is kept, the app strips its embedded metadata (EXIF and XMP — including any location data) <strong>on your device</strong>, and keeps the stripped copy with your report on your device only.</li>
+    <li>Videos are noted by file name only in this version; the video file itself is not stored. Photos too large to keep on the device are likewise noted by name only.</li>
+    <li>The app has <strong>no camera and no recording feature</strong>, on purpose — secretly recording can be against the law (including Illinois' two-party consent law) and can put a reporter in physical danger. The app prints this refusal on the report screen.</li>
+    <li><strong>Never upload a sexual photo or video of anyone under 18.</strong> The app carries this warning on the report screen. Describe the situation in words; the children's tipline route is described in the app.</li>
+  </ul>
+
+  <h2>What we never do — no exceptions</h2>
+  <ul>
+    <li><strong>We never collect a reporter's identity:</strong> no name, no account, no email, no phone number, no device identifier. There is nothing to hand over — to anyone, under any order — because it does not exist.</li>
+    <li><strong>Reports are never public.</strong> There is no list, feed, wall, or search of reports or of the people named in them. A report can be opened only with its code and PIN.</li>
+    <li><strong>We never sell or share report data</strong> — to anyone, at any price. Report data is not a product.</li>
+    <li><strong>Reporting is never charged for.</strong> No reporter is ever asked to pay anything.</li>
+    <li><strong>Sponsors never appear on report surfaces.</strong> Vetted sponsorships, where they exist, support the education and training pages only.</li>
+  </ul>
+
+  <h2>What partners see</h2>
+  <ul>
+    <li>The partner section of this version shows aggregate, de-identified counts computed from reports saved on this device (how many, how many flag a minor, how many follow-up notes). It never shows report contents. At launch, licensed jurisdictions receive routed reports through the receiving authorities' own channels under the routing agreements — the app remains a front door, not a database.</li>
+  </ul>
+
+  <h2>Security — stated plainly</h2>
+  <ul>
+    <li>In this version, report data is protected by <strong>never leaving the device</strong>: there is no account to breach and no server copy to steal, and the PIN exists only as a salted hash. What that means in practice: whoever holds the unlocked device and knows a report's code and PIN can open that report. Use your device's lock screen, keep your code and PIN somewhere he cannot find them, use the EXIT button whenever you need the app gone instantly, and erase the app's data (below) when you are done with a device.</li>
+    <li>Any future version that routes reports will ship only after an independent security review and the attorney review, and this policy will be rewritten first to state its custody, retention, and lawful-process terms exactly.</li>
+  </ul>
+
+  <h2>Your control</h2>
+  <ul>
+    <li>You can erase everything this app stored on this device — every report, note, and setting — at any time with <strong>"Erase everything on this device"</strong> on the home screen. Because the data only ever existed on the device, deletion there is complete.</li>
+    <li>See the <a href="data-deletion.html">Delete Your Data</a> page for the step-by-step.</li>
+    <li>Questions: reginalpolk@luvvets.com</li>
+  </ul>
+
+  <h2>Children</h2>
+  <ul>
+    <li>This app exists to protect children, and its education pages describe how trafficking targets them. Reports concern traffickers, not children; a minor in the sex trade is a victim, never an offender, and the app's survivor pages say so plainly.</li>
+  </ul>
+
+  <h2>Changes</h2>
+  <ul>
+    <li>If this policy changes — above all, when live routing opens — the new version will be posted at this address with a new date before it takes effect, and the app will say plainly what changed.</li>
+  </ul>
+</main>
+</body>
+</html>
