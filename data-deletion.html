@@ -1,0 +1,75 @@
+<!doctype html>
+<!--
+  Just Us — Data Deletion page (deploy-ready static HTML; ships with the app build)
+  Current version (2026-11-22), consistent with the fully local data posture:
+  all app data lives in the user's browser local storage on their device.
+  This page loads no external resources.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Just Us — Delete Your Data</title>
+<style>
+  :root { --ink:#101d33; --gold:#b98a2f; --paper:#f8f6f1; --text:#101d33; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--paper); color:var(--text);
+         font-family:system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+         line-height:1.65; font-size:1.05rem; }
+  main { max-width:44rem; margin:0 auto; padding:2.5rem 1.25rem 4rem; }
+  .brand { font-weight:900; letter-spacing:.04em; color:var(--ink); }
+  .brand b { color:#8a6a28; }
+  h1 { font-size:2rem; font-weight:900; margin:.25rem 0 .25rem; }
+  h2 { font-size:1.2rem; font-weight:800; margin:1.75rem 0 .5rem;
+       border-bottom:3px solid var(--gold); padding-bottom:.25rem; }
+  .updated { color:#7a7264; font-size:.95rem; margin:0 0 1.5rem; }
+  ol, ul { padding-left:1.25rem; }
+  li { margin:.4rem 0; }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand"><b>JUST US</b> — WRONGFUL CONVICTION GUIDE</div>
+  <h1>Delete Your Just Us Data</h1>
+  <p class="updated">Last updated: 2026-11-22</p>
+
+  <p><strong>Just Us stores your case only on your own device</strong> — in your browser's local storage. There is no Just Us account, and no copy of your case, checklist, or application records exists on any server. Deleting it is entirely in your hands and takes seconds.</p>
+
+  <h2>Option 1 — Remove the case in the app</h2>
+  <ol>
+    <li>Open the Just Us app and go to the <strong>Journey</strong> tab.</li>
+    <li>Tap <strong>"Remove this case"</strong> and confirm.</li>
+  </ol>
+  <p>That permanently removes the case record <em>and</em> its Case Builder checklist and application tracking from this device — the whole record, not just the name.</p>
+
+  <h2>Option 2 — Erase everything the app stored</h2>
+  <ol>
+    <li>Open the Just Us app (Journey or Support tab).</li>
+    <li>Tap <strong>"Erase everything Just Us stored on this device"</strong> and confirm.</li>
+  </ol>
+  <p>This removes every record the app keeps in this device's storage. The bundled organization directory stays — it is public reference data, not yours.</p>
+
+  <h2>Option 3 — Clear your browser's site data</h2>
+  <ul>
+    <li>In your browser settings, find site data / cookies for the Just Us app's address and clear it. This removes the same local storage.</li>
+    <li>Uninstalling the app or removing the home-screen icon alone does <strong>not</strong> clear browser data — use one of the options above.</li>
+  </ul>
+
+  <h2>What about the judgment-paper scan?</h2>
+  <ul>
+    <li>Photos of the paper were <strong>never stored and never uploaded</strong> — they were read in the device's memory and discarded. The only scan-related data that exists is the set of facts you confirmed, kept as part of the case; Options 1 and 2 delete them with it.</li>
+  </ul>
+
+  <h2>What about information outside the app?</h2>
+  <ul>
+    <li><strong>Applications you mailed:</strong> Just Us never sends applications — you mail them yourself. To withdraw or ask an organization to delete what you sent, contact that organization directly; its address is in the app's directory.</li>
+    <li><strong>Email:</strong> if you emailed us (for example at reginalpolk@luvvets.com), you can ask us to delete that email thread by writing to <strong>reginalpolk@luvvets.com</strong> with "Delete my data" in the subject. We will confirm deletion by reply.</li>
+  </ul>
+
+  <h2>At launch</h2>
+  <ul>
+    <li>Accounts are not open in this version of the app. The one optional purchase — the Case Packet — is held by Apple under your Apple ID: erasing the app's on-device data does not delete or refund that purchase, and the Case Packet can be restored free from the Pricing tab on any device signed in to the same Apple ID. If a synced version ever opens, this page will be updated before it opens with exactly what can be deleted and how, including any server copies.</li>
+  </ul>
+</main>
+</body>
+</html>
